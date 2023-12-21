@@ -45,43 +45,55 @@
 
 <main class="container">
 
-<!--  <div class="alert alert-success alert-dismissible fade show" role="alert">-->
-<!--    <i class="fas fa-check-circle"></i> Your account has been confirmed and is now active!-->
-<!--    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>-->
-<!--  </div>-->
-
   <div class="row">
-    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-      <div class="row text-center">
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-          <div class="card mb-3">
-            <div class="card-header">
-              A
-            </div>
-            <div class="card-body">
-              <h3>0</h3>
-            </div>
-          </div>
+    <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
+      <div class="card mb-3">
+        <div class="card-header">
+          My Settings
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-          <div class="card mb-3">
-            <div class="card-header">
-              B
+        <div class="card-body">
+          <form method="post" action="user-edit-profile.html">
+            <div class="mb-3">
+              <label for="logo" class="form-label">Profile Logo</label>
+              <input type="file" class="form-control" id="logo" name="logo">
             </div>
-            <div class="card-body">
-              <h3>0</h3>
+            <div class="mb-3">
+              <label for="first_name" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="first_name" name="first_name">
             </div>
-          </div>
+            <div class="mb-3">
+              <label for="last_name" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="last_name" name="last_name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-Mail</label>
+              <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Update</button>
+          </form>
+
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-          <div class="card mb-3">
-            <div class="card-header">
-              C
+      </div>
+      <div class="card mb-3">
+        <div class="card-header">
+          <h6 class="card-title font-weight-normal my-0">Change Password</h6>
+        </div>
+        <div class="card-body">
+          <form method="post" action="user-change-password.html">
+            <div class="mb-3">
+              <label for="old_password" class="form-label">Old Password</label>
+              <input type="password" class="form-control" id="old_password" name="old_password">
             </div>
-            <div class="card-body">
-              <h3>0</h3>
+            <div class="mb-3">
+              <label for="password" class="form-label">New Password</label>
+              <input type="password" class="form-control" id="password" name="password">
             </div>
-          </div>
+            <div class="mb-3">
+              <label for="confirm_password" class="form-label">Re-Type New Password</label>
+              <input type="password" class="form-control" id="confirm_password" name="confirm_password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Update</button>
+          </form>
         </div>
       </div>
     </div>

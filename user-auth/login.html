@@ -13,83 +13,87 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      Design Elements
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="login.html">Login</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="register.html">Register</a>
-        </li>
-      </ul>
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        Design Elements
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Register</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
-<main class="container">
-  <div class="row">
-    <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
+<main role="main" class="wrapper">
+  <section class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
 
-      <div class="card my-3">
-        <div class="card-header">
-          Login
-        </div>
-        <div class="card-body">
+        <div class="card my-3">
+          <div class="card-header">
+            Login
+          </div>
+          <div class="card-body">
 
-          <div class="mb-3 text-center">
-            <p>Log in with:</p>
-            <button type="submit" class="btn btn-primary btn-sm mb-3"><i class="fab fa-google"></i> Google</button>
-            <button type="submit" class="btn btn-primary btn-sm mb-3"><i class="fab fa-facebook"></i> Facebook</button>
+            <div class="mb-3 text-center">
+              <p>Log in with:</p>
+              <button type="submit" class="btn btn-primary btn-sm mb-3"><i class="fab fa-google"></i> Google</button>
+              <button type="submit" class="btn btn-primary btn-sm mb-3"><i class="fab fa-facebook"></i> Facebook</button>
+            </div>
+
+            <form method="post" action="dashboard.html">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="email" name="email">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="remember_me">
+                <label class="form-check-label" for="remember_me">Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 btn-sm mb-3">Login</button>
+              <div class="text-center">
+                <a href="lost-password.html">Lost password</a> / <a href="resend-activation.html">Resend Activation</a>
+              </div>
+            </form>
           </div>
 
-          <form method="post" action="dashboard.html">
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="text" class="form-control" id="email" name="email">
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password" name="password">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="remember_me">
-              <label class="form-check-label" for="remember_me">Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-primary w-100 btn-sm mb-3">Login</button>
-            <div class="text-center">
-              <a href="lost-password.html">Lost password</a> / <a href="resend-activation.html">Resend Activation</a>
-            </div>
-          </form>
+        </div>
+
+        <div class="text-center mb-3">
+          Don't have an account? <a href="register.html">Register</a>
+        </div>
+
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <i class="fas fa-times"></i> Your account is not confirmed or banned!
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
 
       </div>
-
-      <div class="text-center mb-3">
-        Don't have an account? <a href="register.html">Register</a>
-      </div>
-
-      <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <i class="fas fa-times"></i> Your account is not confirmed or banned!
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
-
     </div>
-  </div>
+  </section>
 </main>
 
-<footer class="py-3 bg-dark text-white">
+<footer>
   <div class="container">
-    <small class="m-0 text-center">
-      &copy; 2023 Design Elements
-    </small>
+    <div class="text-muted">
+      <small>&copy; 2023 Design Elements</small>
+    </div>
   </div>
 </footer>
 
